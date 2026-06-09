@@ -1,4 +1,16 @@
-*.log
-*.json
+# Secrets
 .env
+*.env
+
+# Logs
+*.log
+
+# Cowrie data
 data/
+
+# Python
+__pycache__/
+*.pyc
+
+# VSCode
+.vscode/

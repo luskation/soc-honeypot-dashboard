@@ -1,3 +1,6 @@
+filebeat.config:
+  strict.perms: false
+
 filebeat.inputs:
   - type: log
     enabled: true
@@ -8,6 +11,7 @@ filebeat.inputs:
 
 output.elasticsearch:
   hosts: ["http://elasticsearch:9200"]
+  pipeline: "cowrie-geoip"
 
 setup.kibana:
   host: "http://kibana:5601"
